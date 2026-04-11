@@ -157,9 +157,9 @@ export default function Home() {
       <section style={{ background: "#1B2B4A", padding: "6rem 2rem", textAlign: "center" }}>
         <p style={{ color: "#B8900A", fontSize: "0.8125rem", letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: "0.5rem" }}>Revealing Purpose</p>
         <h1 style={{ fontFamily: "Georgia, serif", fontSize: "clamp(2.25rem, 5vw, 3.75rem)", color: "#F7F2E8", lineHeight: 1.15, maxWidth: "720px", margin: "0 auto 1rem" }}>VoCordis</h1>
-        <p style={{ fontFamily: "Georgia, serif", fontStyle: "italic", color: "#DDD4C8", fontSize: "clamp(1.1rem, 2.5vw, 1.5rem)", maxWidth: "600px", margin: "0 auto 1.5rem", lineHeight: 1.5 }}>Empowering those who help others discover their heart's calling</p>
+        <p style={{ fontFamily: "Georgia, serif", fontStyle: "italic", color: "#DDD4C8", fontSize: "clamp(1.1rem, 2.5vw, 1.5rem)", maxWidth: "600px", margin: "0 auto 1.5rem", lineHeight: 1.5 }}>Empowering those who help others discover their calling</p>
         <div style={{ width: "60px", height: "2px", background: "#8C6814", margin: "0 auto 1.75rem" }} />
-        <p style={{ color: "#B8900A", fontSize: "1rem", maxWidth: "560px", margin: "0 auto 2.5rem", lineHeight: 1.75 }}>A coaching platform that trains and equips coaches with a story-based framework to help people uncover their unique purpose, through the moments when they felt most alive.</p>
+        <p style={{ color: "#B8900A", fontSize: "1rem", maxWidth: "560px", margin: "0 auto 2.5rem", lineHeight: 1.75 }}>A coaching platform that trains and equips coaches with a story-based framework to help people uncover their unique purpose.</p>
         <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
           <a href="https://app.vocordis.com/signup" style={{ background: "#8C6814", color: "#F7F2E8", padding: "1rem 2.25rem", borderRadius: "8px", textDecoration: "none", fontWeight: 500, fontSize: "1rem" }}>Create a coach account</a>
           <a href="https://app.vocordis.com/login" style={{ border: "2px solid #F7F2E8", color: "#F7F2E8", padding: "1rem 2.25rem", borderRadius: "8px", textDecoration: "none", fontSize: "1rem" }}>Sign in to your account</a>
