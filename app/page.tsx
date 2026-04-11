@@ -310,7 +310,7 @@ export default function Home() {
         <div style={{ display: "flex", gap: "1.5rem", justifyContent: "center", marginBottom: "1.5rem" }}>
           <a href="https://app.vocordis.com/login" style={{ color: "#8A7060", fontSize: "0.875rem", textDecoration: "none" }}>Sign in</a>
           <a href="https://app.vocordis.com/signup" style={{ color: "#8A7060", fontSize: "0.875rem", textDecoration: "none" }}>Create a coach account</a>
-          <a href="mailto:hello@vocordis.com" style={{ color: "#8A7060", fontSize: "0.875rem", textDecoration: "none" }}>Contact</a>
+          <a href="mailto:vocordis@gmail.com" style={{ color: "#8A7060", fontSize: "0.875rem", textDecoration: "none" }}>Contact</a>
         </div>
         <p style={{ color: "#444441", fontSize: "0.8125rem" }}>© 2026 VoCordis. All rights reserved.</p>
       </footer>
