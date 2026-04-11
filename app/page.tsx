@@ -168,13 +168,18 @@ export default function Home() {
 
       <div style={{ height: "4px", background: "#8C6814" }} />
 
-      {/* WHAT IS VOCORDIS — concise version */}
+      {/* WHAT IS VOCORDIS */}
       <section style={{ maxWidth: "800px", margin: "0 auto", padding: "4.5rem 2rem", textAlign: "center" }}>
         <p style={{ color: "#8C6814", fontSize: "0.8125rem", letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: "1rem" }}>What is VoCordis?</p>
-        <h2 style={{ fontFamily: "Georgia, serif", fontSize: "clamp(1.5rem, 3vw, 2.25rem)", color: "#1B2B4A", marginBottom: "1.25rem", lineHeight: 1.3 }}>A response to a crisis hiding in plain sight</h2>
+        <h2 style={{ fontFamily: "Georgia, serif", fontSize: "clamp(1.5rem, 3vw, 2.25rem)", color: "#1B2B4A", marginBottom: "1.25rem", lineHeight: 1.3 }}>
+          Empowering those who help others discover their heart's calling, so purpose becomes lived reality
+        </h2>
         <div style={{ width: "48px", height: "2px", background: "#8C6814", margin: "0 auto 1.5rem" }} />
         <p style={{ fontSize: "1.0625rem", lineHeight: 1.8, color: "#8A7060", maxWidth: "620px", margin: "0 auto 1.25rem" }}>
           A Harvard study found that 58% of young adults lack purpose or meaning, 42% suffer from anxiety or depression, and 44% feel they matter to others only a little or not at all. Behind these numbers is a simpler truth: most people have never been helped to understand who they are and what they are made to offer.
+        </p>
+        <p style={{ fontSize: "1.0625rem", lineHeight: 1.8, color: "#8A7060", maxWidth: "620px", margin: "0 auto 1.25rem" }}>
+          VoCordis addresses this by training and equipping coaches & mentors with a proven story-based methodology for uncovering each person's unique Purpose Pattern, and a Workbench that supports the analysis and report generation. Together, they allow coaches & mentors to accompany those they serve from their story to a clear, personalized portrait of who they are and what they are made to give.
         </p>
         <p style={{ fontFamily: "Georgia, serif", fontStyle: "italic", fontSize: "1.1875rem", color: "#1B2B4A", maxWidth: "580px", margin: "0 auto", lineHeight: 1.7 }}>
           VoCordis comes from the Latin <em>vox cordis</em>, the voice of the heart. Each person's deepest purpose is not invented or assigned. It is already written into who they are, waiting to be heard.
@@ -271,7 +276,21 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      
+      {/* FOUNDATION */}
+      <section style={{ background: "#1B2B4A", padding: "4.5rem 2rem" }}>
+        <div style={{ maxWidth: "640px", margin: "0 auto", textAlign: "center" }}>
+          <div style={{ width: "48px", height: "2px", background: "#8C6814", margin: "0 auto 2rem" }} />
+          <p style={{ fontFamily: "Georgia, serif", fontStyle: "italic", fontSize: "1.1875rem", color: "#DDD4C8", lineHeight: 1.85, marginBottom: "1.5rem" }}>
+            This work is grounded in a vision of the human person shaped by Christian anthropology and informed by positive psychology. It assumes that each person carries a unique imprint, and that the desires, gifts, and loves revealed in their stories are not accidental, but point toward a deeper meaning.
+          </p>
+          <p style={{ fontSize: "1rem", color: "#B8900A", lineHeight: 1.8 }}>
+            We offer this work with the conviction that human beings are not only physical, but also spiritual, and that a fully lived life involves engaging both dimensions. We invite you to continue exploring where these longings come from, and what animates this work.
+          </p>
+          <div style={{ width: "48px", height: "2px", background: "#8C6814", margin: "2rem auto 0" }} />
+        </div>
+      </section>
+      
       {/* CTA */}
       <section style={{ background: "#1B2B4A", padding: "5rem 2rem", textAlign: "center" }}>
         <p style={{ color: "#B8900A", fontSize: "0.8125rem", letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: "1rem" }}>Get started</p>
