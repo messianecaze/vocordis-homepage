@@ -303,14 +303,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FOOTER */}
+     {/* FOOTER */}
       <footer style={{ background: "#121820", padding: "2.5rem 2rem", textAlign: "center" }}>
         <p style={{ fontFamily: "Georgia, serif", fontStyle: "italic", color: "#F7F2E8", fontSize: "1.25rem", marginBottom: "0.25rem" }}>VoCordis</p>
         <p style={{ color: "#8C6814", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1.5rem" }}>Revealing Purpose</p>
-        <div style={{ display: "flex", gap: "1.5rem", justifyContent: "center", marginBottom: "1.5rem" }}>
+        <div style={{ display: "flex", gap: "1.5rem", justifyContent: "center", marginBottom: "1rem" }}>
           <a href="https://app.vocordis.com/login" style={{ color: "#8A7060", fontSize: "0.875rem", textDecoration: "none" }}>Sign in</a>
           <a href="https://app.vocordis.com/signup" style={{ color: "#8A7060", fontSize: "0.875rem", textDecoration: "none" }}>Create a coach account</a>
           <a href="mailto:vocordis@gmail.com" style={{ color: "#8A7060", fontSize: "0.875rem", textDecoration: "none" }}>Contact</a>
+        </div>
+        <div style={{ marginBottom: "1.5rem" }}>
+          <a href="https://app.vocordis.com/login?password=1" style={{ color: "#444441", fontSize: "0.75rem", textDecoration: "none" }}>Sign up with a password</a>
         </div>
         <p style={{ color: "#444441", fontSize: "0.8125rem" }}>© 2026 VoCordis. All rights reserved.</p>
       </footer>
