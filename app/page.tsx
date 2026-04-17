@@ -313,7 +313,7 @@ export default function Home() {
           <a href="mailto:vocordis@gmail.com" style={{ color: "#8A7060", fontSize: "0.875rem", textDecoration: "none" }}>Contact</a>
         </div>
         <div style={{ marginBottom: "1.5rem" }}>
-          <a href="https://app.vocordis.com/login?password=1" style={{ color: "#444441", fontSize: "0.75rem", textDecoration: "none" }}>Sign up with a password</a>
+          <a href="https://app.vocordis.com/login?password=1" style={{ color: "#444441", fontSize: "0.75rem", textDecoration: "none" }}>Sign in with a password</a>
         </div>
         <p style={{ color: "#444441", fontSize: "0.8125rem" }}>© 2026 VoCordis. All rights reserved.</p>
       </footer>
