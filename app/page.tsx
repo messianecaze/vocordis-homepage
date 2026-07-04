@@ -154,7 +154,7 @@ export default function Home() {
         </div>
         <div style={{ display: "flex", gap: "0.75rem", alignItems: "center" }}>
           <a href="https://app.vocordis.com/login" style={{ color: "#F7F2E8", textDecoration: "none", fontSize: "0.9rem", padding: "0.5rem 1.25rem", border: "1px solid rgba(247,242,232,0.4)", borderRadius: "6px" }}>Sign in</a>
-          <a href="https://app.vocordis.com/signup" style={{ background: "#8C6814", color: "#F7F2E8", padding: "0.5rem 1.25rem", borderRadius: "6px", textDecoration: "none", fontSize: "0.9rem", fontWeight: 500 }}>Create a VoCordis Guide account</a>
+          <a href="https://app.vocordis.com/signup" style={{ background: "#8C6814", color: "#F7F2E8", padding: "0.5rem 1.25rem", borderRadius: "6px", textDecoration: "none", fontSize: "0.9rem", fontWeight: 500 }}>Create a VoCordis account</a>
         </div>
       </nav>
 
@@ -166,7 +166,7 @@ export default function Home() {
         <div style={{ width: "60px", height: "2px", background: "#8C6814", margin: "0 auto 1.75rem" }} />
         <p style={{ color: "#B8900A", fontSize: "1rem", maxWidth: "560px", margin: "0 auto 2.5rem", lineHeight: 1.75 }}>A coaching platform that trains and equips guides - and the organizations dedicated to human formation and purpose accompaniment - with a story-based framework to help people uncover their unique purpose.</p>
         <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
-          <a href="https://app.vocordis.com/signup" style={{ background: "#8C6814", color: "#F7F2E8", padding: "1rem 2.25rem", borderRadius: "8px", textDecoration: "none", fontWeight: 500, fontSize: "1rem" }}>Create a VoCordis Guide account</a>
+          <a href="https://app.vocordis.com/signup" style={{ background: "#8C6814", color: "#F7F2E8", padding: "1rem 2.25rem", borderRadius: "8px", textDecoration: "none", fontWeight: 500, fontSize: "1rem" }}>Create a VoCordis account</a>
           <a href="https://app.vocordis.com/login" style={{ border: "2px solid #F7F2E8", color: "#F7F2E8", padding: "1rem 2.25rem", borderRadius: "8px", textDecoration: "none", fontSize: "1rem" }}>Sign in to your account</a>
         </div>
       </section>
@@ -181,8 +181,8 @@ export default function Home() {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1.5rem", alignItems: "stretch" }}>
           <div style={{ background: "#fff", borderRadius: "12px", padding: "2rem", border: "1px solid #DDD4C8", borderTop: "4px solid #8C6814", display: "flex", flexDirection: "column", height: "100%" }}>
             <h3 style={{ fontFamily: "Georgia, serif", fontSize: "1.25rem", color: "#1B2B4A", marginBottom: "0.75rem" }}>For Guides</h3>
-            <p style={{ fontSize: "0.9375rem", color: "#8A7060", lineHeight: 1.7, marginBottom: "1.5rem", flexGrow: 1 }}>Coaches, mentors, counselors, and anyone trained to accompany or guide others. Create a VoCordis Guide account to begin certification and start accompanying those you serve with the Purpose Pattern methodology.</p>
-            <a href="https://app.vocordis.com/signup" style={{ display: "inline-block", background: "#8C6814", color: "#F7F2E8", padding: "0.75rem 1.5rem", borderRadius: "8px", textDecoration: "none", fontWeight: 500, fontSize: "0.9375rem", textAlign: "center", alignSelf: "flex-start" }}>Create a VoCordis Guide account</a>
+            <p style={{ fontSize: "0.9375rem", color: "#8A7060", lineHeight: 1.7, marginBottom: "1.5rem", flexGrow: 1 }}>Coaches, mentors, counselors, and anyone trained to accompany or guide others. Create a VoCordis account to begin your certification path and start accompanying those you serve with the Purpose Pattern methodology.</p>
+            <a href="https://app.vocordis.com/signup" style={{ display: "inline-block", background: "#8C6814", color: "#F7F2E8", padding: "0.75rem 1.5rem", borderRadius: "8px", textDecoration: "none", fontWeight: 500, fontSize: "0.9375rem", textAlign: "center", alignSelf: "flex-start" }}>Create a VoCordis account</a>
           </div>
           <div style={{ background: "#fff", borderRadius: "12px", padding: "2rem", border: "1px solid #DDD4C8", borderTop: "4px solid #1B2B4A", display: "flex", flexDirection: "column", height: "100%" }}>
             <h3 style={{ fontFamily: "Georgia, serif", fontSize: "1.25rem", color: "#1B2B4A", marginBottom: "0.75rem" }}>For Organizations</h3>
@@ -287,14 +287,55 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ACADEMY */}
+      <section style={{ background: "#F2EDE8", padding: "4.5rem 2rem" }}>
+        <div style={{ maxWidth: "800px", margin: "0 auto" }}>
+          <p style={{ color: "#8C6814", fontSize: "0.8125rem", letterSpacing: "0.08em", textTransform: "uppercase", textAlign: "center", marginBottom: "0.75rem" }}>Training & Certification</p>
+          <h2 style={{ fontFamily: "Georgia, serif", fontSize: "clamp(1.5rem, 3vw, 2rem)", color: "#1B2B4A", textAlign: "center", marginBottom: "0.75rem" }}>The VoCordis Academy</h2>
+          <div style={{ width: "48px", height: "2px", background: "#8C6814", margin: "0 auto 1.5rem" }} />
+          <p style={{ fontSize: "1.0625rem", lineHeight: 1.8, color: "#8A7060", maxWidth: "620px", margin: "0 auto 3rem", textAlign: "center" }}>
+            A certification pathway from first exposure to expert practice.
+          </p>
+          <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
+            {[
+              { num: "1", title: "Orientation", desc: "Understand the Purpose Pattern framework and how it works." },
+              { num: "2", title: "Story Companion", desc: "Help others write and share their own fulfillment stories." },
+              { num: "3", title: "Educator-Facilitator", desc: "Lead group formation sessions built on the methodology." },
+              { num: "4", title: "Certified VoCordis Guide", desc: "Conduct interviews and deliver Purpose Pattern Reports, one-on-one or across a cohort." },
+              { num: "5", title: "Lead VoCordis Guide", desc: "Train and supervise the next generation of guides. (By invitation)" },
+            ].map((step) => (
+              <div key={step.num} style={{ display: "flex", gap: "1.5rem", alignItems: "flex-start", background: "#fff", borderRadius: "12px", padding: "1.5rem", border: "1px solid #DDD4C8" }}>
+                <span style={{ fontFamily: "Georgia, serif", fontSize: "2.5rem", color: "#DDD4C8", fontWeight: 500, lineHeight: 1, flexShrink: 0, minWidth: "2rem", textAlign: "center" }}>{step.num}</span>
+                <div>
+                  <h3 style={{ fontSize: "1rem", fontWeight: 500, color: "#1B2B4A", marginBottom: "0.5rem" }}>{step.title}</h3>
+                  <p style={{ fontSize: "0.9375rem", color: "#8A7060", lineHeight: 1.7 }}>{step.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <p style={{ textAlign: "center", marginTop: "2.5rem" }}>
+            <a href="mailto:contact@vocordis.com" style={{ fontFamily: "Georgia, serif", fontStyle: "italic", fontSize: "1.0625rem", color: "#1B2B4A", textDecoration: "none", borderBottom: "1px solid #8C6814" }}>Contact us for more information</a>
+          </p>
+        </div>
+      </section>
+
       {/* WHO IS IT FOR */}
       <section style={{ background: "#1B2B4A", padding: "4.5rem 2rem" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
           <p style={{ color: "#B8900A", fontSize: "0.8125rem", letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: "0.75rem" }}>Who it is for</p>
           <h2 style={{ fontFamily: "Georgia, serif", fontSize: "clamp(1.5rem, 3vw, 2rem)", color: "#F7F2E8", marginBottom: "0.75rem" }}>Built for those who walk alongside others - one on one, and at scale</h2>
           <div style={{ width: "48px", height: "2px", background: "#8C6814", margin: "0 auto 3rem" }} />
+
+          <p style={{ color: "#B8900A", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase", textAlign: "left", marginBottom: "0.75rem" }}>Individual guides</p>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: "1rem", marginBottom: "2.5rem" }}>
+            {["Life coaches", "Professional coaches", "Counselors", "Mentors"].map((role) => (
+              <div key={role} style={{ background: "rgba(247,242,232,0.08)", border: "1px solid rgba(247,242,232,0.2)", borderRadius: "10px", padding: "1.25rem 1rem", color: "#F7F2E8", fontSize: "0.9375rem", fontWeight: 500 }}>{role}</div>
+            ))}
+          </div>
+
+          <p style={{ color: "#B8900A", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase", textAlign: "left", marginBottom: "0.75rem" }}>Organizations</p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: "1rem" }}>
-            {["Life coaches", "Professional coaches", "Counselors", "Mentors", "Schools & Universities", "Formation Programs"].map((role) => (
+            {["Schools & Universities", "Formation Programs"].map((role) => (
               <div key={role} style={{ background: "rgba(247,242,232,0.08)", border: "1px solid rgba(247,242,232,0.2)", borderRadius: "10px", padding: "1.25rem 1rem", color: "#F7F2E8", fontSize: "0.9375rem", fontWeight: 500 }}>{role}</div>
             ))}
           </div>
@@ -302,13 +343,13 @@ export default function Home() {
       </section>
       
       {/* FOUNDATION */}
-      <section style={{ background: "#1B2B4A", padding: "4.5rem 2rem" }}>
+      <section style={{ background: "#F7F2E8", padding: "4.5rem 2rem" }}>
         <div style={{ maxWidth: "640px", margin: "0 auto", textAlign: "center" }}>
           <div style={{ width: "48px", height: "2px", background: "#8C6814", margin: "0 auto 2rem" }} />
-          <p style={{ fontFamily: "Georgia, serif", fontStyle: "italic", fontSize: "1.1875rem", color: "#DDD4C8", lineHeight: 1.85, marginBottom: "1.5rem" }}>
+          <p style={{ fontFamily: "Georgia, serif", fontStyle: "italic", fontSize: "1.1875rem", color: "#1B2B4A", lineHeight: 1.85, marginBottom: "1.5rem" }}>
             This work is grounded in a vision of the human person shaped by Christian anthropology and informed by positive psychology. It assumes that each person carries a unique imprint, and that the desires, gifts, and loves revealed in their stories are not accidental, but point toward a deeper meaning.
           </p>
-          <p style={{ fontSize: "1rem", color: "#B8900A", lineHeight: 1.8 }}>
+          <p style={{ fontSize: "1rem", color: "#8A7060", lineHeight: 1.8 }}>
             We offer this work with the conviction that human beings are not only physical, but also spiritual, and that a fully lived life involves engaging both dimensions. We invite you to continue exploring where these longings come from, and what animates this work.
           </p>
           <div style={{ width: "48px", height: "2px", background: "#8C6814", margin: "2rem auto 0" }} />
@@ -322,7 +363,7 @@ export default function Home() {
         <div style={{ width: "48px", height: "2px", background: "#8C6814", margin: "0 auto 1.5rem" }} />
         <p style={{ color: "#B8900A", fontSize: "1rem", maxWidth: "440px", margin: "0 auto 2.5rem", lineHeight: 1.75 }}>Join the VoCordis community of guides and organizations helping people discover their unique calling.</p>
         <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
-          <a href="https://app.vocordis.com/signup" style={{ background: "#8C6814", color: "#F7F2E8", padding: "1rem 2.25rem", borderRadius: "8px", textDecoration: "none", fontWeight: 500, fontSize: "1rem" }}>Create a VoCordis Guide account</a>
+          <a href="https://app.vocordis.com/signup" style={{ background: "#8C6814", color: "#F7F2E8", padding: "1rem 2.25rem", borderRadius: "8px", textDecoration: "none", fontWeight: 500, fontSize: "1rem" }}>Create a VoCordis account</a>
           <a href="https://app.vocordis.com/login" style={{ border: "2px solid #F7F2E8", color: "#F7F2E8", padding: "1rem 2.25rem", borderRadius: "8px", textDecoration: "none", fontSize: "1rem" }}>Sign in to your account</a>
         </div>
       </section>
@@ -336,7 +377,7 @@ export default function Home() {
         <p style={{ color: "#8C6814", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1.5rem" }}>Revealing Purpose</p>
         <div style={{ display: "flex", gap: "1.5rem", justifyContent: "center", marginBottom: "1rem" }}>
           <a href="https://app.vocordis.com/login" style={{ color: "#8A7060", fontSize: "0.875rem", textDecoration: "none" }}>Sign in</a>
-          <a href="https://app.vocordis.com/signup" style={{ color: "#8A7060", fontSize: "0.875rem", textDecoration: "none" }}>Create a VoCordis Guide account</a>
+          <a href="https://app.vocordis.com/signup" style={{ color: "#8A7060", fontSize: "0.875rem", textDecoration: "none" }}>Create a VoCordis account</a>
           <a href="mailto:contact@vocordis.com" style={{ color: "#8A7060", fontSize: "0.875rem", textDecoration: "none" }}>Contact</a>
         </div>
         <div style={{ marginBottom: "1.5rem" }}>
