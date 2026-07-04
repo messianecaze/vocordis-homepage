@@ -91,7 +91,7 @@ function FAQSection() {
     <section style={{ maxWidth: "800px", margin: "0 auto", padding: "4rem 2rem" }}>
       <p style={{ color: "#8C6814", fontSize: "0.8125rem", letterSpacing: "0.08em", textTransform: "uppercase", textAlign: "center", marginBottom: "0.75rem" }}>Support</p>
       <h2 style={{ fontFamily: "Georgia, serif", fontSize: "clamp(1.5rem, 3vw, 2rem)", color: "#1B2B4A", textAlign: "center", marginBottom: "0.75rem" }}>Frequently asked questions</h2>
-      <p style={{ textAlign: "center", color: "#8A7060", fontSize: "0.9375rem", marginBottom: "2rem" }}>Everything coaches need to know about the VoCordis Workbench.</p>
+      <p style={{ textAlign: "center", color: "#8A7060", fontSize: "0.9375rem", marginBottom: "2rem" }}>Everything coaches need to know about the VoCordis Workbench</p>
       <div style={{ position: "relative", marginBottom: "1.25rem" }}>
         <input type="text" placeholder="Search questions..." value={search} onChange={e => { setSearch(e.target.value); setActiveCategory("all"); }} style={{ width: "100%", padding: "11px 14px 11px 38px", fontFamily: "inherit", fontSize: "0.9375rem", color: "#2D1F14", background: "#fff", border: "1px solid #DDD4C8", borderRadius: "8px", outline: "none" }} />
         <svg style={{ position: "absolute", left: 12, top: "50%", transform: "translateY(-50%)", opacity: 0.4 }} width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="6.5" cy="6.5" r="5" stroke="#2D1F14" strokeWidth="1.5"/><path d="M10.5 10.5L14 14" stroke="#2D1F14" strokeWidth="1.5" strokeLinecap="round"/></svg>
@@ -164,7 +164,7 @@ export default function Home() {
         <h1 style={{ fontFamily: "Georgia, serif", fontSize: "clamp(2.25rem, 5vw, 3.75rem)", color: "#F7F2E8", lineHeight: 1.15, maxWidth: "720px", margin: "0 auto 1rem" }}>VoCordis</h1>
         <p style={{ fontFamily: "Georgia, serif", fontStyle: "italic", color: "#DDD4C8", fontSize: "clamp(1.1rem, 2.5vw, 1.5rem)", maxWidth: "600px", margin: "0 auto 1.5rem", lineHeight: 1.5 }}>Empowering those who help others discover their calling</p>
         <div style={{ width: "60px", height: "2px", background: "#8C6814", margin: "0 auto 1.75rem" }} />
-        <p style={{ color: "#B8900A", fontSize: "1rem", maxWidth: "560px", margin: "0 auto 2.5rem", lineHeight: 1.75 }}>A coaching platform that trains and equips guides - and the organizations dedicated to human formation and purpose accompaniment - with a story-based framework to help people uncover their unique purpose.</p>
+        <p style={{ color: "#B8900A", fontSize: "1rem", maxWidth: "560px", margin: "0 auto 2.5rem", lineHeight: 1.75 }}>A coaching platform that trains and equips guides - and the organizations dedicated to human formation and purpose accompaniment - with a story-based framework to help people uncover their unique purpose</p>
         <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
           <a href="https://app.vocordis.com/signup" style={{ background: "#8C6814", color: "#F7F2E8", padding: "1rem 2.25rem", borderRadius: "8px", textDecoration: "none", fontWeight: 500, fontSize: "1rem" }}>Create a VoCordis account</a>
           <a href="https://app.vocordis.com/login" style={{ border: "2px solid #F7F2E8", color: "#F7F2E8", padding: "1rem 2.25rem", borderRadius: "8px", textDecoration: "none", fontSize: "1rem" }}>Sign in to your account</a>
@@ -186,7 +186,7 @@ export default function Home() {
           </div>
           <div style={{ background: "#fff", borderRadius: "12px", padding: "2rem", border: "1px solid #DDD4C8", borderTop: "4px solid #1B2B4A", display: "flex", flexDirection: "column", height: "100%" }}>
             <h3 style={{ fontFamily: "Georgia, serif", fontSize: "1.25rem", color: "#1B2B4A", marginBottom: "0.75rem" }}>For Organizations</h3>
-            <p style={{ fontSize: "0.9375rem", color: "#8A7060", lineHeight: 1.7, marginBottom: "1.5rem", flexGrow: 1 }}>Schools, universities, and organizations dedicated to human formation and purpose accompaniment. Bring the Purpose Pattern methodology to your community, and equip your own team to guide those you serve.</p>
+            <p style={{ fontSize: "0.9375rem", color: "#8A7060", lineHeight: 1.7, marginBottom: "1.5rem", flexGrow: 1 }}>Schools, universities, and organizations dedicated to human formation and purpose accompaniment. Bring the Purpose Pattern methodology to your community, and equip your own team to guide those you serve</p>
             <a href="mailto:contact@vocordis.com" style={{ display: "inline-block", border: "2px solid #1B2B4A", color: "#1B2B4A", padding: "0.75rem 1.5rem", borderRadius: "8px", textDecoration: "none", fontWeight: 500, fontSize: "0.9375rem", textAlign: "center", alignSelf: "flex-start" }}>Talk to our team</a>
           </div>
         </div>
