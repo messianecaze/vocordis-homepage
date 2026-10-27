@@ -46,3 +46,20 @@ export function MarkIcon() {
     </svg>
   );
 }
+
+/* The mark reversed for Navy backgrounds (chosen 27 Oct 2026):
+   Parchment petals, Gold Light circles, Gold centre. */
+export function MarkReversed({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 200 200" aria-hidden="true">
+      {[0, 120, 240].map((r) => (
+        <path key={r} d="M100 14C113 32 113 53 100 71C87 53 87 32 100 14Z" transform={`rotate(${r} 100 100)`} fill="var(--parchment)" />
+      ))}
+      <circle cx="148.5" cy="72" r="8.5" fill="var(--gold-light)" />
+      <circle cx="51.5" cy="72" r="8.5" fill="var(--gold-light)" />
+      <circle cx="100" cy="156" r="8.5" fill="var(--gold-light)" />
+      <circle cx="100" cy="100" r="21" fill="var(--gold)" />
+      <circle cx="100" cy="100" r="10" fill="var(--gold-light)" />
+    </svg>
+  );
+}

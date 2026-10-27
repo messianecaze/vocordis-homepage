@@ -9,10 +9,10 @@ import { useState } from "react";
 
 type Part = "desires" | "modes" | "env";
 
-const items: { part: Part; where: string; title: string; text: string }[] = [
-  { part: "desires", where: "The three roots", title: "Core Desires", text: "The fundamental drives woven into who you are. They require no justification." },
-  { part: "modes", where: "The trunk, branches and blossoms", title: "Modes of Self-Gift", text: "The characteristic ways you give yourself to others." },
-  { part: "env", where: "The wind, rain and soil", title: "Optimal Environments", text: "The conditions in which you naturally flourish." },
+const items: { part: Part; where: string; title: string; text: string; note?: string }[] = [
+  { part: "desires", where: "The three roots", title: "Core Desires", text: "The fundamental drives woven into who you are", note: "They require no justification." },
+  { part: "modes", where: "The trunk, branches and blossoms", title: "Modes of Self-Gift", text: "The characteristic ways you give yourself to others" },
+  { part: "env", where: "The wind, rain and soil", title: "Optimal Environments", text: "The conditions in which you naturally flourish" },
 ];
 
 function Icon({ part }: { part: Part }) {
@@ -79,6 +79,7 @@ export function PurposeTree() {
                 <span className="ptree-where">{it.where}</span>
                 <span className="ptree-title">{it.title}</span>
                 <span className="ptree-text">{it.text}</span>
+                {it.note && <span className="ptree-text ptree-note">{it.note}</span>}
               </span>
             </button>
           </li>

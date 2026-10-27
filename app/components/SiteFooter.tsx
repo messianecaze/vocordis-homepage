@@ -1,11 +1,10 @@
 import Link from "next/link";
+import { MarkReversed } from "./Icons";
 
 export function SiteFooter() {
   return (
     <footer className="footer">
-      <span className="footer-mark">
-        <img src="/logo-mark.png" alt="" />
-      </span>
+      <MarkReversed className="footer-mark" />
       <p className="footer-wordmark">VoCordis</p>
       <p className="footer-tagline">Revealing Purpose</p>
       <div className="footer-links">
