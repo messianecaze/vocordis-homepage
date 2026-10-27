@@ -31,8 +31,8 @@ export default function Home() {
           <span className="hero-rule" aria-hidden="true" />
           <p className="hero-tagline">Revealing Purpose</p>
           <p className="hero-subtitle">Empowering those who help others discover their calling</p>
-          <p className="hero-text">A story-based methodology, a certification pathway and an AI-supported Workbench for guides, and for the organizations that form people.</p>
-          <div className="btn-row btn-row--start">
+          <p className="hero-text">className="hero-text">Every person's purpose is already written in their story. VoCordis equips guides to help them read it </p>
+          <div className="btn-row btn-row--start"> 
             <a href="https://app.vocordis.com/signup" className="btn btn-primary">Create a VoCordis account</a>
             <a href="mailto:contact@vocordis.com" className="btn btn-ghost">Talk to our team</a>
           </div>
@@ -50,7 +50,7 @@ export default function Home() {
           <div className="paths">
             <div className="card path">
               <h3 className="card-title">For Guides</h3>
-              <p className="card-text">Coaches, mentors, counselors, and anyone who accompanies others. Train in the methodology and use the Workbench with the people you serve.</p>
+              <p className="card-text">Coaches, mentors, counselors, and anyone who accompanies others. Train in the methodology and use the Workbench with the people you serve </p>
               <div className="path-links">
                 <a href="https://app.vocordis.com/signup" className="btn btn-primary">Create a VoCordis account</a>
               </div>
@@ -85,7 +85,7 @@ export default function Home() {
             <a href="https://www.mcc.gse.harvard.edu/reports/on-edge/" target="_blank" rel="noopener noreferrer"><em>On Edge</em> (2023)</a>
           </p>
           <hr className="rule" />
-          <p className="statement statement--on-dark">Most people have never been helped to understand who they are and what they are made to offer.</p>
+          <p className="statement statement--on-dark">Most people have never been helped to understand who they are and what they are made to offer </p>
         </div>
       </section>
 
@@ -94,7 +94,7 @@ export default function Home() {
         <div className="container--wide">
           <h2 className="heading center">Revealing the Purpose Pattern</h2>
           <hr className="rule" />
-          <p className="lead center" style={{ marginBottom: "3rem" }}>A personal portrait that emerges from a person&apos;s own stories, in three dimensions woven into one statement.</p>
+          <p className="lead center" style={{ marginBottom: "3rem" }}>A personal portrait that emerges from a person&apos;s own stories, in three dimensions woven into one statement </p>
           <PurposeTree />
           <p className="center" style={{ marginTop: "2.5rem" }}>
             <Link href="/methodology" className="btn btn-ghost">Explore the methodology</Link>
@@ -111,17 +111,17 @@ export default function Home() {
             <li className="journey-step">
               <span className="journey-icon"><FeatherIcon /></span>
               <h3 className="card-title">Share stories</h3>
-              <p className="card-text">Moments when the person felt most alive and fully themselves.</p>
+              <p className="card-text">Moments when the person felt most alive and fully themselves </p>
             </li>
             <li className="journey-step">
               <span className="journey-icon"><CompassIcon /></span>
               <h3 className="card-title">Identify the pattern</h3>
-              <p className="card-text">The guide, supported by the Workbench, surfaces what recurs across the stories.</p>
+              <p className="card-text">The guide, supported by the Workbench, surfaces what recurs across the stories </p>
             </li>
             <li className="journey-step">
               <span className="journey-icon"><MarkIcon /></span>
               <h3 className="card-title">Receive the report</h3>
-              <p className="card-text">A clear portrait of who the person is, a compass for life, career, and decisions.</p>
+              <p className="card-text">A clear portrait of who the person is, a compass for life, career, and decisions </p>
             </li>
           </ol>
         </div>
@@ -132,7 +132,7 @@ export default function Home() {
         <div className="container">
           <h2 className="heading">The VoCordis Academy</h2>
           <hr className="rule" />
-          <p className="lead">A certification pathway from first exposure to expert practice.</p>
+          <p className="lead">A certification pathway from first exposure to expert practice </p>
           <a href="mailto:contact@vocordis.com" className="text-link">Contact us for more information</a>
         </div>
       </section>
@@ -144,7 +144,7 @@ export default function Home() {
           <p className="statement" style={{ marginBottom: "1.5rem" }}>
             VoCordis comes from the Latin <em>vox cordis</em>, the voice of the heart. Each person&apos;s deepest purpose is not invented or assigned. It is already written into who they are, waiting to be heard.
           </p>
-          <p className="lead" style={{ marginBottom: "1.25rem" }}>Grounded in Christian anthropology and informed by positive psychology.</p>
+          <p className="lead" style={{ marginBottom: "1.25rem" }}>Grounded in Christian anthropology and informed by positive psychology </p>
           <Link href="/about" className="text-link">About VoCordis</Link>
           <hr className="rule" style={{ marginBottom: 0 }} />
         </div>
@@ -154,7 +154,7 @@ export default function Home() {
       <section className="section section--navy center">
         <h2 className="heading">Ready to reveal purpose?</h2>
         <hr className="rule" />
-        <p className="lead" style={{ maxWidth: "440px", marginBottom: "2.5rem" }}>Join the VoCordis community of guides and organizations helping people discover their unique calling.</p>
+        <p className="lead" style={{ maxWidth: "440px", marginBottom: "2.5rem" }}>Join the VoCordis community of guides and organizations helping people discover their unique calling </p>
         <div className="btn-row">
           <a href="https://app.vocordis.com/signup" className="btn btn-primary">Create a VoCordis account</a>
           <a href="https://app.vocordis.com/login" className="btn btn-ghost">Sign in to your account</a>
