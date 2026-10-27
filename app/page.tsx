@@ -31,7 +31,7 @@ export default function Home() {
           <span className="hero-rule" aria-hidden="true" />
           <p className="hero-tagline">Revealing Purpose</p>
           <p className="hero-subtitle">Empowering those who help others discover their calling</p>
-          <p className="hero-text">className="hero-text">Every person's purpose is already written in their story. VoCordis equips guides to help them read it </p>
+          <p className="hero-text">className="hero-text">Every person's purpose is already written in their story. VoCordis equips guides to help them read it. </p>
           <div className="btn-row btn-row--start"> 
             <a href="https://app.vocordis.com/signup" className="btn btn-primary">Create a VoCordis account</a>
             <a href="mailto:contact@vocordis.com" className="btn btn-ghost">Talk to our team</a>
