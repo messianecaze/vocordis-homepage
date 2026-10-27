@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Rosette } from "./components/Rosette";
+import { PurposeTree } from "./components/PurposeTree";
 import { CompassIcon, FeatherIcon, MarkIcon } from "./components/Icons";
 
 /* Homepage wording: approved draft "VoCordis Homepage — Draft Wording", 27 Oct 2026.
@@ -9,21 +9,38 @@ import { CompassIcon, FeatherIcon, MarkIcon } from "./components/Icons";
 export default function Home() {
   return (
     <>
-      {/* 1. HERO — stacked lockup */}
-      <section className="hero">
-        <div className="lockup">
-          <img src="/logo-mark.png" alt="" />
-          <h1 className="lockup-wordmark">VoCordis</h1>
-          <span className="lockup-rule" aria-hidden="true" />
-          <p className="lockup-tagline">Revealing Purpose</p>
-        </div>
-        <p className="hero-subtitle">Empowering those who help others discover their calling</p>
-        <p className="hero-text">A story-based methodology, a certification pathway and an AI-supported Workbench for guides, and for the organizations that form people.</p>
-        <div className="btn-row">
-          <a href="https://app.vocordis.com/signup" className="btn btn-primary">Create a VoCordis account</a>
-          <a href="mailto:contact@vocordis.com" className="btn btn-ghost">Talk to our team</a>
+      {/* 1. HERO — deep blue, stained-glass watermark (concept A1, chosen 27 Oct 2026) */}
+      <section className="hero-navy section--navy">
+        <svg className="hero-watermark" viewBox="0 0 200 200" aria-hidden="true">
+          <g fill="var(--gold)">
+            <path d="M100 14C113 32 113 53 100 71C87 53 87 32 100 14Z" />
+            <path d="M100 14C113 32 113 53 100 71C87 53 87 32 100 14Z" transform="rotate(120 100 100)" />
+            <path d="M100 14C113 32 113 53 100 71C87 53 87 32 100 14Z" transform="rotate(240 100 100)" />
+            <circle cx="148.5" cy="72" r="8.5" />
+            <circle cx="51.5" cy="72" r="8.5" />
+            <circle cx="100" cy="156" r="8.5" />
+            <circle cx="100" cy="100" r="21" />
+          </g>
+          <circle cx="100" cy="100" r="96" fill="none" stroke="var(--gold)" strokeWidth="1" />
+        </svg>
+        <div className="hero-navy-inner">
+          <span className="hero-mark">
+            <img src="/logo-mark.png" alt="" />
+          </span>
+          <h1 className="hero-wordmark">VoCordis</h1>
+          <span className="hero-rule" aria-hidden="true" />
+          <p className="hero-tagline">Revealing Purpose</p>
+          <p className="hero-subtitle">Empowering those who help others discover their calling</p>
+          <p className="hero-text">A story-based methodology, a certification pathway and an AI-supported Workbench for guides, and for the organizations that form people.</p>
+          <div className="btn-row btn-row--start">
+            <a href="https://app.vocordis.com/signup" className="btn btn-primary">Create a VoCordis account</a>
+            <a href="mailto:contact@vocordis.com" className="btn btn-ghost">Talk to our team</a>
+          </div>
         </div>
       </section>
+      <div className="glass-band" aria-hidden="true">
+        <span /><span /><span />
+      </div>
 
       {/* 2. TWO WAYS IN */}
       <section className="section section--muted">
@@ -72,19 +89,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4. THE PURPOSE PATTERN — interactive rosette */}
+      {/* 4. THE PURPOSE PATTERN — the tree */}
       <section className="section">
         <div className="container--wide">
           <h2 className="heading center">Revealing the Purpose Pattern</h2>
           <hr className="rule" />
           <p className="lead center" style={{ marginBottom: "3rem" }}>A personal portrait that emerges from a person&apos;s own stories, in three dimensions woven into one statement.</p>
-          <Rosette
-            items={[
-              { part: "desires", title: "Core Desires", text: "The fundamental drives woven into who you are. They require no justification." },
-              { part: "modes", title: "Modes of Self-Gift", text: "The characteristic ways you give yourself to others." },
-              { part: "environments", title: "Optimal Environments", text: "The conditions in which you naturally flourish." },
-            ]}
-          />
+          <PurposeTree />
           <p className="center" style={{ marginTop: "2.5rem" }}>
             <Link href="/methodology" className="btn btn-ghost">Explore the methodology</Link>
           </p>

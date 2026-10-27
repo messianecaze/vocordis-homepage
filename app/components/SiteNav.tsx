@@ -49,7 +49,7 @@ export function SiteNav() {
         </ul>
         <div className="nav-actions">
           <a href="https://app.vocordis.com/login" className="nav-link">Sign in</a>
-          <a href="https://app.vocordis.com/signup" className="btn btn--sm btn-ghost">Create a VoCordis account</a>
+          <a href="https://app.vocordis.com/signup" className="btn btn--sm btn-primary">Create a VoCordis account</a>
         </div>
       </div>
     </nav>
