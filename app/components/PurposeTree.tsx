@@ -42,6 +42,9 @@ function Icon({ part }: { part: Part }) {
   );
 }
 
+/* Also used on the Methodology page so both pages share the same symbols. */
+export { Icon as TreeIcon };
+
 export function PurposeTree() {
   const [focus, setFocus] = useState<Part | null>(null);
   const dim = (p: Part) => (focus && focus !== p ? " is-dim" : "");
