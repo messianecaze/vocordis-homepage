@@ -2,16 +2,16 @@
 import { useState } from "react";
 
 /* The Purpose Pattern drawn as a tree (from Messiane's sketch, Oct 2026).
-   Navy roots = Core Desires (three roots for the three desires).
-   Gold trunk, branches and blossoms = Modes of Self-Gift.
+   Navy roots and trunk = Core Desires (three roots for the three desires).
+   Gold branches and blossoms = Modes of Self-Gift.
    Burgundy wind, rain and soil = Optimal Environments: conditions around
    the tree that exist without it. Layers live in /public/tree/. */
 
 type Part = "desires" | "modes" | "env";
 
 const items: { part: Part; where: string; title: string; text: string; note?: string }[] = [
-  { part: "desires", where: "The three roots", title: "Core Desires", text: "The fundamental drives woven into who you are", note: "They require no justification." },
-  { part: "modes", where: "The trunk, branches and blossoms", title: "Modes of Self-Gift", text: "The characteristic ways you give yourself to others" },
+  { part: "desires", where: "The roots and trunk", title: "Core Desires", text: "The fundamental drives woven into who you are", note: "They require no justification." },
+  { part: "modes", where: "The branches and blossoms", title: "Modes of Self-Gift", text: "The characteristic ways you give yourself to others" },
   { part: "env", where: "The wind, rain and soil", title: "Optimal Environments", text: "The conditions in which you naturally flourish" },
 ];
 
@@ -51,7 +51,7 @@ export function PurposeTree() {
       <div
         className="ptree-art"
         role="img"
-        aria-label="A tree: its three navy roots are Core Desires, its gold trunk, branches and blossoms are Modes of Self-Gift, and the wind, rain and soil around it are Optimal Environments"
+        aria-label="A tree: its navy roots and trunk are Core Desires, its gold branches and blossoms are Modes of Self-Gift, and the wind, rain and soil around it are Optimal Environments"
       >
         <img className={`ptree-layer${dim("env")}`} src="/tree/environments.svg" alt="" />
         <img className="ptree-layer" src="/tree/ground.svg" alt="" />
