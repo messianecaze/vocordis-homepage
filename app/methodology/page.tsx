@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { TreeIcon } from "../components/PurposeTree";
 
 export const metadata: Metadata = {
   title: "The Methodology — VoCordis",
@@ -7,26 +8,14 @@ export const metadata: Metadata = {
 
 /* Text moved unchanged from the previous homepage. */
 
-function PetalGlyph() {
+/* Symbols and labels match the Purpose Pattern tree on the homepage:
+   navy roots and trunk = Core Desires, gold branches and blossoms = Modes of Self-Gift,
+   burgundy wind, rain and soil = Optimal Environments. */
+function Glyph({ part }: { part: "desires" | "modes" | "env" }) {
   return (
-    <svg className="pattern-glyph" width="26" height="44" viewBox="0 0 26 44" aria-hidden="true">
-      <path d="M13 1C23 12 23 32 13 43C3 32 3 12 13 1Z" fill="var(--navy)" />
-    </svg>
-  );
-}
-function CentreGlyph() {
-  return (
-    <svg className="pattern-glyph" width="44" height="44" viewBox="0 0 44 44" aria-hidden="true">
-      <circle cx="22" cy="22" r="16" fill="var(--gold)" />
-      <circle cx="22" cy="22" r="7.5" fill="var(--gold-light)" />
-    </svg>
-  );
-}
-function CircleGlyph() {
-  return (
-    <svg className="pattern-glyph" width="44" height="44" viewBox="0 0 44 44" aria-hidden="true">
-      <circle cx="22" cy="22" r="12" fill="var(--burgundy)" />
-    </svg>
+    <div className="pattern-glyph" style={{ width: 30 }}>
+      <TreeIcon part={part} />
+    </div>
   );
 }
 function UpArrow() {
@@ -54,18 +43,21 @@ export default function MethodologyPage() {
         <div style={{ maxWidth: "860px", margin: "0 auto" }}>
           <div className="pattern">
             <div className="card pattern-top">
-              <PetalGlyph />
+              <Glyph part="desires" />
+              <span className="ptree-where">The Why · the roots and trunk</span>
               <h2 className="card-title">Core Desires</h2>
               <p className="card-text">The fundamental drives woven into who you are. They show up repeatedly across different roles and contexts, and they require no justification. They simply are.</p>
             </div>
             <div className="pattern-pair">
               <div className="card">
-                <CentreGlyph />
+                <Glyph part="modes" />
+                <span className="ptree-where">The How · the branches and blossoms</span>
                 <h2 className="card-title">Modes of Self-Gift</h2>
                 <p className="card-text">The characteristic ways you give yourself to others. This is where your pattern becomes most visible, where your desires flow outward as gift through relationship.</p>
               </div>
               <div className="card">
-                <CircleGlyph />
+                <Glyph part="env" />
+                <span className="ptree-where">The Where · the wind, rain and soil</span>
                 <h2 className="card-title">Optimal Environments</h2>
                 <p className="card-text">The conditions where you naturally flourish and your gifts find their fullest expression. When these are present, your capacity to contribute and grow expands.</p>
               </div>
