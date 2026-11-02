@@ -20,7 +20,9 @@ export function SiteFooter() {
       <div className="footer-small" style={{ marginBottom: "1.5rem" }}>
         <a href="https://app.vocordis.com/login?password=1">Sign in with a password</a>
       </div>
-      <p className="footer-small">© 2026 VoCordis. All rights reserved.</p>
+      <p className="footer-small">
+        © 2026 VoCordis. All rights reserved. · <Link href="/privacy">Privacy</Link>
+      </p>
     </footer>
   );
 }
