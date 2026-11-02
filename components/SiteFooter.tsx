@@ -1,11 +1,10 @@
 import Link from "next/link";
+import { MarkReversed } from "./Icons";
 
 export function SiteFooter() {
   return (
     <footer className="footer">
-      <span className="footer-mark">
-        <img src="/logo-mark.png" alt="" />
-      </span>
+      <MarkReversed className="footer-mark" />
       <p className="footer-wordmark">VoCordis</p>
       <p className="footer-tagline">Revealing Purpose</p>
       <div className="footer-links">
@@ -21,7 +20,9 @@ export function SiteFooter() {
       <div className="footer-small" style={{ marginBottom: "1.5rem" }}>
         <a href="https://app.vocordis.com/login?password=1">Sign in with a password</a>
       </div>
-      <p className="footer-small">© 2026 VoCordis. All rights reserved.</p>
+      <p className="footer-small">
+        © 2026 VoCordis. All rights reserved. · <Link href="/privacy">Privacy</Link>
+      </p>
     </footer>
   );
 }
